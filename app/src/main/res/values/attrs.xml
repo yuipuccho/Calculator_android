@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="roundRectButtonStyle" format="integer|reference" />
+    <declare-styleable name="RoundRectButton" parent="AppTheme.Button">
+        <attr name="btn_background_color" format="color" />
+        <attr name="btn_disable_background_color" format="color" />
+        <attr name="btn_text_color" format="color" />
+        <attr name="btn_disable_text_color" format="color" />
+        <attr name="border_color" format="color" />
+        <attr name="border_disable_color" format="color" />
+        <attr name="border_width" format="dimension" />
+        <attr name="corner_radius" format="dimension" />
+    </declare-styleable>
+</resources>

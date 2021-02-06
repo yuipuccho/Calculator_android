@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Calculator</string>
+    <string name="clearButtonText">C</string>
+    <string name="divisionButtonText">÷</string>
+    <string name="sevenButtonText">7</string>
+    <string name="eightButtonText">8</string>
+    <string name="nineButtonText">9</string>
+    <string name="multiplicationButtonText">×</string>
+    <string name="fourButtonText">4</string>
+    <string name="fiveButton">5</string>
+    <string name="sixButtonText">6</string>
+    <string name="minusButton">-</string>
+    <string name="oneButton">1</string>
+    <string name="twoButtonText">2</string>
+    <string name="threeButtonText">3</string>
+    <string name="plusButton">+</string>
+    <string name="zeroButtonText">0</string>
+    <string name="equalButtonText">=</string>
 </resources>
