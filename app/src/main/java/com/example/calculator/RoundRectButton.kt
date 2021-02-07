@@ -18,8 +18,11 @@ import androidx.appcompat.widget.AppCompatButton
  * @property borderWidth 枠太さ
  * @property cornerRadius 角Radius
  */
-class RoundRectButton @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = R.attr.roundRectButtonStyle)
-    : AppCompatButton(context, attrs, defStyleAttr) {
+class RoundRectButton @JvmOverloads constructor(
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = R.attr.roundRectButtonStyle
+) : AppCompatButton(context, attrs, defStyleAttr) {
 
     var btnBackgroundColor = Color.TRANSPARENT
         set(value) {
@@ -78,12 +81,25 @@ class RoundRectButton @JvmOverloads constructor(context: Context, attrs: Attribu
     init {
         attrs?.let {
             val typedArray = context.obtainStyledAttributes(attrs, R.styleable.RoundRectButton)
-            btnBackgroundColor = typedArray.getColor(R.styleable.RoundRectButton_btn_background_color, btnBackgroundColor)
-            btnDisableBackgroundColor = typedArray.getColor(R.styleable.RoundRectButton_btn_disable_background_color, btnDisableBackgroundColor)
-            btnTextColor = typedArray.getColor(R.styleable.RoundRectButton_btn_text_color, textColors.defaultColor)
-            btnDisableTextColor = typedArray.getColor(R.styleable.RoundRectButton_btn_disable_text_color, btnDisableTextColor)
+            btnBackgroundColor = typedArray.getColor(
+                R.styleable.RoundRectButton_btn_background_color,
+                btnBackgroundColor
+            )
+            btnDisableBackgroundColor = typedArray.getColor(
+                R.styleable.RoundRectButton_btn_disable_background_color,
+                btnDisableBackgroundColor
+            )
+            btnTextColor = typedArray.getColor(
+                R.styleable.RoundRectButton_btn_text_color,
+                textColors.defaultColor
+            )
+            btnDisableTextColor = typedArray.getColor(
+                R.styleable.RoundRectButton_btn_disable_text_color,
+                btnDisableTextColor
+            )
             borderColor = typedArray.getColor(R.styleable.RoundRectButton_border_color, borderColor)
-            borderDisableColor = typedArray.getColor(R.styleable.RoundRectButton_border_disable_color, borderColor)
+            borderDisableColor =
+                typedArray.getColor(R.styleable.RoundRectButton_border_disable_color, borderColor)
             borderWidth = typedArray.getDimension(R.styleable.RoundRectButton_border_width, 0f)
             cornerRadius = typedArray.getDimension(R.styleable.RoundRectButton_corner_radius, 0f)
             typedArray.recycle()
